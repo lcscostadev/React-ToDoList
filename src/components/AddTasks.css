@@ -4,6 +4,7 @@
     border: 2px solid #545c6e;
     background-color: #292d37;
     transition: all ease-in-out .2s;
+    color: white;
 }
 
 .input-section input:focus {
@@ -13,6 +14,7 @@
 
 .input-section button {
     transition: all ease-in-out .4s;
+    color: white;
 }
 
 .input-section button:hover {
