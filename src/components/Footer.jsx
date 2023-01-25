@@ -25,6 +25,12 @@ const Footer = () => {
                         <ion-icon name="logo-instagram" size="large"></ion-icon>
                     </a>
                 </div>
+
+                <div className='icon'>
+                    <a href="https://www.youtube.com/channel/UC34-Ya9LsJ6GCgIlpMJYvUQ" target="_blank">
+                        <ion-icon name="logo-youtube" size="large"></ion-icon>
+                    </a>
+                </div>
             </div>
         </>
     );
