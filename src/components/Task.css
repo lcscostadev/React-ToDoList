@@ -1,0 +1,32 @@
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    border: 2px solid #545c6e;
+    border-radius: 10px;
+    background-color: #3E4553;
+    margin: 10px 0px;
+    cursor: pointer;
+    padding-left: 10px;
+    font-size: 18px;
+    text-transform: capitalize;
+    /* max-width: 350px; */
+}
+
+.item:hover {
+    border: 2px solid #8992a7;
+}
+
+.item button {
+    border-radius: 0px 8px 8px 0px;
+}
+
+.btn button {
+    transition: all ease-in-out .2s;
+}
+
+.btn button:hover {
+    color: rgb(214, 52, 52);
+    background-color: #2d323d;
+}

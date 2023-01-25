@@ -1,0 +1,23 @@
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    gap: 10px;
+}
+
+.icon {
+    background: #545c6e;
+    padding: 10px 10px 6px 10px;
+    border-radius: 10px;
+    transition: all ease-in .5s;
+    cursor: pointer;
+}
+
+.icon:hover {
+    background-color: #8992a7;
+}
+
+a {
+    color: inherit;
+}

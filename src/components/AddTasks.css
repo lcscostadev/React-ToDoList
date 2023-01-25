@@ -1,0 +1,31 @@
+.input-section input {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #545c6e;
+    background-color: #292d37;
+    transition: all ease-in-out .2s;
+}
+
+.input-section input:focus {
+    border: 2px solid #8992a7;
+    outline: none;
+}
+
+.input-section button {
+    transition: all ease-in-out .4s;
+}
+
+.input-section button:hover {
+    background: #3c553e;
+}
+
+.input-section button:focus {
+    outline: none;
+}
+
+.input-section {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
