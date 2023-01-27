@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { Tasks, AddTasks, Header, Footer } from './components'
+import { Tasks, AddTasks, Header, Footer, Clock } from './components'
 import { v4 as uuidv4 } from 'uuid';
 import './App.css'
 
@@ -52,6 +52,9 @@ function App() {
   return (
     <>
       <div className='App'>
+        <Clock>
+
+        </Clock>
         <Header />
         <div>
           <AddTasks handleTaskAddition={handleTaskAddition} />

@@ -1,0 +1,11 @@
+.clock {
+    border: 2px solid #545c6e;
+    font-size: 3.5rem;
+    padding: 30px;
+    border-radius: 10px;
+    transition: all ease-in .4s;
+}
+
+.clock:hover {
+    border: 2px solid #8992a7;
+}

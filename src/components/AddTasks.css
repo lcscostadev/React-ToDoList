@@ -12,6 +12,10 @@
     outline: none;
 }
 
+.input-section input:hover {
+    border: 2px solid #8992a7;
+}
+
 .input-section button {
     transition: all ease-in-out .4s;
     color: white;
