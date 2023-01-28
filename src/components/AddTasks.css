@@ -35,3 +35,22 @@
     align-items: center;
     justify-content: center;
 }
+
+.text {
+    margin: 5px 5px 0px 5px;
+    text-align: start;
+}
+
+.warning {
+    margin: 0px 5px 0px 5px;
+    text-align: start;
+    display: none;
+}
+
+.complete {
+    color: chartreuse;
+}
+
+.delete {
+    color: #d63434;
+}

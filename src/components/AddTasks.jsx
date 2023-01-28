@@ -8,7 +8,6 @@ const AddTasks = ({ handleTaskAddition }) => {
     const handleInputChange = (e) => {
         const data = e.target.value;
         setInputData(data);
-        console.log(data)
     }
 
     const handleAddTask = () => {
@@ -20,11 +19,25 @@ const AddTasks = ({ handleTaskAddition }) => {
         }
     }
 
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        setInputData('');
+    }
+
     return (
         <>
-            <div className='input-section'>
-                <input type="text" onChange={handleInputChange} value={inputData} />
-                <button onClick={handleAddTask}>Add Task</button>
+            <form onSubmit={handleSubmit}>
+                <div className='input-section'>
+                    <input type="text" onChange={handleInputChange} value={inputData} />
+                    <button onClick={handleAddTask}>Add Task</button>
+                </div>
+            </form>
+            <div className='text'>
+                <p>Tasks remaining:</p>
+            </div>
+            <div className='warning'>
+                <p>When a task is <span className='complete'>completed</span> you can <span className='delete'>delete</span> it.</p>
             </div>
         </>
     );

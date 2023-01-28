@@ -21,6 +21,7 @@ function App() {
 
   // CREATE
   const handleTaskAddition = (taskTitle) => {
+
     const newTasks = [...tasks, {
       id: uuidv4(),
       title: taskTitle,

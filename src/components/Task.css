@@ -1,33 +1,56 @@
+.task-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .item {
     display: flex;
     align-items: center;
     justify-content: space-between;
     overflow: hidden;
-    border: 2px solid #545c6e;
-    border-radius: 10px;
+    padding: 10px 0px;
+    border-top: 2px solid #545c6e;
+    border-left: 2px solid #545c6e;
+    border-bottom: 2px solid #545c6e;
+    border-radius: 10px 0px 0px 10px;
     background-color: #3E4553;
-    margin: 10px 0px;
+    margin: 5px 0px;
     cursor: pointer;
+    width: 225px;
     padding-left: 10px;
     font-size: 18px;
     text-transform: capitalize;
     /* max-width: 350px; */
 }
 
-.item:hover {
-    border: 2px solid #8992a7;
-}
+/* .item:hover {
+    border-top: 2px solid #8992a7;
+    border-left: 2px solid #8992a7;
+    border-bottom: 2px solid #8992a7;
+} */
+
 
 .item button {
     border-radius: 0px 8px 8px 0px;
-    color: white;
 }
 
 .btn button {
     transition: all ease-in-out .2s;
+    border-radius: 0px 10px 10px 0px;
+    border: none;
+    border-top: 2px solid #545c6e;
+    border-bottom: 2px solid #545c6e;
+    border-right: 2px solid #545c6e;
+    padding: 12px 20px;
+    color: white;
+}
+
+.btn button:focus {
+    outline: none;
 }
 
 .btn button:hover {
-    color: rgb(214, 52, 52);
+    color: #d63434;
     background-color: #2d323d;
 }

@@ -4,12 +4,14 @@ import './Task.css';
 const Task = ({ task, handleTaskClick, handleTaskDeletion }) => {
     return (
         <>
-            <div className='item' style={task.completed ? { borderLeft: '12px solid chartreuse', borderRight: '2px solid chartreuse', borderTop: '2px solid chartreuse', borderBottom: '2px solid chartreuse', transition: 'all ease-in .2s' } : { transition: 'all ease-out .2s' }}>
-                <div onClick={() => handleTaskClick(task.id)}>
-                    {task.title}
+            <div className='task-container'>
+                <div className='item' style={task.completed ? { borderLeft: '10px solid chartreuse', borderTop: '2px solid chartreuse', borderBottom: '2px solid chartreuse', transition: 'all ease-in .2s' } : { transition: 'all ease-out .2s' }} onClick={() => handleTaskClick(task.id)}>
+                    <div>
+                        {task.title}
+                    </div>
                 </div>
                 <div className='btn'>
-                    <button onClick={() => handleTaskDeletion(task.id)}>X</button>
+                    <button style={task.completed ? { borderTop: '2px solid chartreuse', borderRight: '2px solid chartreuse', borderBottom: '2px solid chartreuse', color: '#d63434', backgroundColor: '#2d323d' } : {}} onClick={() => handleTaskDeletion(task.id)}><ion-icon name="trash-outline"></ion-icon></button>
                 </div>
             </div>
         </>
