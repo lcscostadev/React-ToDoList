@@ -34,7 +34,7 @@ const AddTasks = ({ handleTaskAddition }) => {
                 </div>
             </form>
             <div className='text'>
-                <p>Tasks remaining:</p>
+                <p>Tasks:</p>
             </div>
             <div className='warning'>
                 <p>When a task is <span className='complete'>completed</span> you can <span className='delete'>delete</span> it.</p>
