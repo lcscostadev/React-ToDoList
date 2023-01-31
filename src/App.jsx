@@ -53,9 +53,7 @@ function App() {
   return (
     <>
       <div className='App'>
-        <Clock>
-
-        </Clock>
+        <Clock />
         <Header />
         <div>
           <AddTasks handleTaskAddition={handleTaskAddition} />
