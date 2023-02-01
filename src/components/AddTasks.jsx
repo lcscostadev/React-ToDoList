@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './AddTasks.css';
 
-const AddTasks = ({ handleTaskAddition }) => {
+const AddTasks = ({ handleTaskAddition, tasks }) => {
 
     const [inputData, setInputData] = useState('');
 
@@ -34,7 +34,7 @@ const AddTasks = ({ handleTaskAddition }) => {
                 </div>
             </form>
             <div className='text'>
-                <p>Tasks:</p>
+                <p>Tasks: {tasks.length}</p>
             </div>
             <div className='warning'>
                 <p>When a task is <span className='complete'>completed</span> you can <span className='delete'>delete</span> it.</p>

@@ -31,7 +31,7 @@ function App() {
     setTasks(newTasks);
   }
 
-  // UPDATE
+
   const handleTaskClick = (taskId) => {
     const newTasks = tasks.map(task => {
       if (task.id === taskId) return {
@@ -56,7 +56,7 @@ function App() {
         <Clock />
         <Header />
         <div>
-          <AddTasks handleTaskAddition={handleTaskAddition} />
+          <AddTasks tasks={tasks} handleTaskAddition={handleTaskAddition} />
           <Tasks tasks={tasks} handleTaskClick={handleTaskClick} handleTaskDeletion={handleTaskDeletion} />
         </div>
         <Footer />
