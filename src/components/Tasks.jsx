@@ -2,9 +2,11 @@ import React from 'react';
 import { Task } from './index'
 
 const Tasks = ({ tasks, handleTaskClick, handleTaskDeletion }) => {
+
+
     return (
         <>
-            {tasks.map((task, index) => (
+            {tasks.map((task) => (
                 <Task key={task.id} task={task} handleTaskClick={handleTaskClick} handleTaskDeletion={handleTaskDeletion} />
             ))}
         </>

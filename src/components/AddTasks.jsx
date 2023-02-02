@@ -36,7 +36,7 @@ const AddTasks = ({ handleTaskAddition, tasks }) => {
             <div className='text'>
                 <p>Tasks: {tasks.length}</p>
             </div>
-            <div className='warning'>
+            <div className='warning' style={tasks.length > 0 ? { display: 'flex' } : {}}>
                 <p>When a task is <span className='complete'>completed</span> you can <span className='delete'>delete</span> it.</p>
             </div>
         </>

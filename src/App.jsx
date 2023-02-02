@@ -5,6 +5,7 @@ import './App.css'
 
 function App() {
 
+
   // READ
   const [tasks, setTasks] = useState(() => {
     const savedTasks = localStorage.getItem("tasks");
@@ -31,7 +32,7 @@ function App() {
     setTasks(newTasks);
   }
 
-
+  // COMPLETE
   const handleTaskClick = (taskId) => {
     const newTasks = tasks.map(task => {
       if (task.id === taskId) return {

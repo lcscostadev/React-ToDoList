@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Task.css';
 
 const Task = ({ task, handleTaskClick, handleTaskDeletion }) => {
+
     return (
         <>
             <div className='task-container'>
@@ -13,6 +14,10 @@ const Task = ({ task, handleTaskClick, handleTaskDeletion }) => {
                 <div className='btn'>
                     <button style={task.completed ? { borderTop: '2px solid chartreuse', borderRight: '2px solid chartreuse', borderBottom: '2px solid chartreuse', color: '#d63434', backgroundColor: '#2d323d' } : {}} onClick={() => handleTaskDeletion(task.id)}><ion-icon name="trash-outline"></ion-icon></button>
                 </div>
+                <div>
+                    {/* <button onClick={() => handleEdit(task)}>edit</button> */}
+                </div>
+                {/* <button onClick={task.completed ? modalDelete(task.id) : delete (task.id)}></button> */}
             </div>
         </>
     );
