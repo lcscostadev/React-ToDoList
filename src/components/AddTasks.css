@@ -39,9 +39,13 @@
 .text {
     margin: 5px 5px 0px 5px;
     text-align: start;
+    padding-left: 5px;
+    font-size: 18px;
+    color: #fff;
 }
 
 .warning {
+    padding-left: 5px;
     margin: 0px 5px 0px 5px;
     text-align: start;
     display: none;
