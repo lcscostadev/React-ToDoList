@@ -45,6 +45,7 @@
     margin: 0px 5px 0px 5px;
     text-align: start;
     display: none;
+    max-width: 300px;
 }
 
 .complete {
@@ -53,4 +54,8 @@
 
 .delete {
     color: #d63434;
+}
+
+.edit {
+    color: rgb(255, 200, 0);
 }

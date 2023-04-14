@@ -6,7 +6,7 @@ const Footer = () => {
         <>
             <div className='icons'>
                 <div className='icon'>
-                    <a href="https://github.com/lcscostadev" target="_blank">
+                    <a href="https://github.com/lcscostadev/React-ToDoList" target="_blank">
                         <ion-icon name="logo-github" size="large"></ion-icon>
                     </a>
                 </div>

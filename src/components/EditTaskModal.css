@@ -1,0 +1,105 @@
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.2s ease-out;
+}
+
+
+.modal-content h2 {
+    margin-top: 0;
+}
+
+.modal-content form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-content label {
+    margin-top: 10px;
+}
+
+.modal-content input[type="text"] {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    border: 2px solid #545c6e;
+    background-color: #292d37;
+    transition: all ease-in-out .2s;
+    color: white;
+}
+
+.modal-content input:focus {
+    border: 2px solid #8992a7;
+    outline: none;
+}
+
+.modal-content {
+    padding: 2rem;
+    border-radius: 0.5rem;
+    border: 2px solid #8992a7;
+    background-color: #545c6e;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
+    animation: slideIn 0.2s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 200px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.button-group button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.button-group button:first-child {
+    background-color: #f8f8f8;
+    color: #444;
+}
+
+.button-group button:last-child {
+    background-color: #2d323d;
+    color: #fff;
+}

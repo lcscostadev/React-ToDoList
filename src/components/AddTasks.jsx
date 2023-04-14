@@ -11,7 +11,7 @@ const AddTasks = ({ handleTaskAddition, tasks }) => {
     }
 
     const handleAddTask = () => {
-        if (inputData !== '') {
+        if (inputData.trim() !== '') {
             handleTaskAddition(inputData);
             setInputData('');
         } else {
@@ -37,7 +37,7 @@ const AddTasks = ({ handleTaskAddition, tasks }) => {
                 <p>Tasks: {tasks.length}</p>
             </div>
             <div className='warning' style={tasks.length > 0 ? { display: 'flex' } : {}}>
-                <p>When a task is <span className='complete'>completed</span> you can <span className='delete'>delete</span> it.</p>
+                <p>When a task is <span className='complete'>completed</span> you can <span className='delete'>delete</span> it, <span className='edit'>DoubleClick</span> the Task you want to <span className='edit'>Edit</span>.</p>
             </div>
         </>
     );
