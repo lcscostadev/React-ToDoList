@@ -37,7 +37,10 @@ const AddTasks = ({ handleTaskAddition, tasks }) => {
                 <p>Tasks: {tasks.length}</p>
             </div>
             <div className='warning' style={tasks.length > 0 ? { display: 'flex' } : {}}>
-                <p>When a task is <span className='complete'>completed</span> you can <span className='delete'>delete</span> it, <span className='edit'>DoubleClick</span> the Task you want to <span className='edit'>Edit</span>.</p>
+                <div className='info-container'>
+                    <ion-icon name="alert-circle-outline" className="exclamation" size="large"></ion-icon>
+                    <p>When a task is <span className='complete'>completed</span> you can <span className='delete'>delete</span> it, <span className='edit'>DoubleClick</span> the Task you want to <span className='edit'>Edit</span>.</p>
+                </div>
             </div>
         </>
     );
