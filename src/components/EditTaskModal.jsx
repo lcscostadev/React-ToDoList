@@ -1,13 +1,23 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './EditTaskModal.css';
 
 const EditTaskModal = ({ task, handleTaskUpdate, handleCloseModal }) => {
     const [inputData, setInputData] = useState(task.title);
     const [showModal, setShowModal] = useState(false);
+    const inputRef = useRef(null);
 
     useEffect(() => {
         setShowModal(true);
+        inputRef.current.focus();
     }, []);
+
+    const handleDoubleClick = () => {
+        inputRef.current.select();
+    };
+
+    const handleFocus = (e) => {
+        e.target.select();
+    };
 
     const handleInputChange = (e) => {
         const data = e.target.value;
@@ -27,19 +37,6 @@ const EditTaskModal = ({ task, handleTaskUpdate, handleCloseModal }) => {
         }
     };
 
-    const handleModalClose = () => {
-        // add the "hide" class to the modal container to animate the slide-out effect
-        const modalContainer = document.querySelector('.modal-container');
-        modalContainer.classList.add('hide');
-
-        // wait for the animation to finish before actually closing the modal
-        setTimeout(() => {
-            handleCloseModal();
-        }, 200);
-    };
-
-
-
     const modalClasses = showModal ? 'modal-enter modal-enter-active' : '';
 
     return (
@@ -49,7 +46,14 @@ const EditTaskModal = ({ task, handleTaskUpdate, handleCloseModal }) => {
                 <form onSubmit={handleFormSubmit}>
                     <label>
                         Task name:
-                        <input type="text" value={inputData} onChange={handleInputChange} />
+                        <input
+                            type="text"
+                            value={inputData}
+                            onChange={handleInputChange}
+                            onDoubleClick={handleDoubleClick}
+                            onFocus={handleFocus}
+                            ref={inputRef}
+                        />
                     </label>
                     <div className="button-group">
                         <button type="button" onClick={handleCloseModal}>
